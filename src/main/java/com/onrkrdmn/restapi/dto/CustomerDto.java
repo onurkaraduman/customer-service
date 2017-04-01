@@ -4,6 +4,7 @@ import com.onrkrdmn.repository.domain.Contract;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -14,8 +15,10 @@ import java.util.List;
 @Setter
 public class CustomerDto implements BaseDto {
 
+    @NotNull
     private String fullName;
 
+    @NotNull
     private String email;
 
     private List<ContractDto> contracts;

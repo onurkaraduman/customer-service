@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.dozer.Mapping;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
@@ -16,10 +17,13 @@ import java.util.Date;
 @Setter
 public class ContractDto {
 
+    @NotNull
     private Date startDate;
 
+    @NotNull
     private double monthlyRevenue;
 
+    @NotNull
     @Mapping("type.name")
     private String type;
 }
