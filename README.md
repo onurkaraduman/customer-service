@@ -29,7 +29,7 @@ This is a sample of a customer-service RESTful Web Service based on Spring Boot 
  
  The following screenshot shows the data structure:
  
- ![Data Structure](uml/class-diagrams/entity_classDiagram.png)
+ ![Data Structure](uml/class-diagrams/entity_classDiagram_v2.png)
  
 #### Data Access Layer
   
