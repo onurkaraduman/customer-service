@@ -17,11 +17,12 @@ This is a sample of a customer-service RESTful Web Service based on Spring Boot 
 * [Spring HATEOAS](http://projects.spring.io/spring-hateoas/)
 * [Embedded Jetty](https://www.eclipse.org/jetty/)
 * [MySQL](https://www.mysql.com/)
+* [H2](http://www.h2database.com/html/main.html)
 * [Lombok](https://projectlombok.org/)
 * [Swagger](http://swagger.io/)
 * [AssertJ](http://joel-costigliola.github.io/assertj/)
 * [Dozer](http://dozer.sourceforge.net/documentation/usage.html)
- 
+
 
 ### Software Design Overview
 
@@ -54,23 +55,24 @@ mvn clean install
 
 ### Running 
 
-Before running, you should create database in mysql:
+
+##### Using Maven
+Currently, there are two different environment profiles (prod, test). Prod uses MySQL and Test uses H2 database.
+
+
+**With Production environment**
+
+Before running with prod, you should create database in mysql:
 
 ````
 create database customer_service;
 ````
 
-##### Using Maven
-Currently, there are two different environment profiles (prod, test). But the configurations are same in both file.
-
-
-With Production environment
-
 ````sh
 mvn spring-boot:run -Dspring.profiles.active=prod
 `````
 
-With Test environment
+**With Test environment**
 
 ````sh
 mvn spring-boot:run -Dspring.profiles.active=test
