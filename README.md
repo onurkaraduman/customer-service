@@ -1,6 +1,6 @@
 # RESTful Customer Web Service
 
-[![Build Status](https://api.travis-ci.org/repositories/OnurKaraduman/customer-service.svg)](https://travis-ci.org/OnurKaraduman/customer-service)
+[![Build Status](https://travis-ci.org/onurkaraduman/customer-service.svg?branch=master)](https://travis-ci.org/OnurKaraduman/customer-service)
 
 
 This is a sample of a customer-service RESTful Web Service based on Spring Boot platform using MySQL DB as a persistent storage.
